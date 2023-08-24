@@ -52,7 +52,7 @@ def make_comment(
                         "camera": {
                             "isOrthoProjection": False,
                             "position": [
-                                -16.959975903859306,
+                                -17.959975903859306,
                                 109.21340462426888,
                                 19.00868018548827,
                             ],
