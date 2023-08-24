@@ -8,6 +8,7 @@ def make_comment(
     model_id: str,
     version_id: str,
     comment_text: str,
+    bogus_input: str,
     selected_object_id: str,
 ) -> None:
     client.httpclient.execute(
@@ -29,7 +30,8 @@ def make_comment(
                     "doc": {
                         "content": [
                             {
-                                "content": [{"text": comment_text, "type": "text"}],
+                                "content": [{"text": comment_text, "type": "text"},
+                                            {"text": bogus_input, "type": "text"}],
                                 "type": "paragraph",
                             }
                         ],
